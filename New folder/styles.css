@@ -1,0 +1,303 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container-main {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-side {
+    width: 40%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.left-side img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+.right-side {
+    margin-left: 40%;
+    width: 60%;
+    padding: 1rem;
+}
+
+.nav-toggle {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    color: #534c4c;
+    background-color: white;
+    border: none;
+}
+
+.nav-toggle i {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    width: 60%;
+    height: 100vh;
+    background: #000;
+    color: white;
+    padding-top: 60px;
+    transition: right 0.3s ease;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+#menu.show {
+    right: 0;
+}
+
+#menu ul {
+    list-style: none;
+    margin-top: 23px;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#menu ul li {
+    margin: 1.25rem 0;
+}
+
+#menu ul li a {
+    color: white;
+    font-size: 2.25rem;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+#menu ul li a:hover {
+    color: #adb5bd;
+}
+
+#close-menu {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border: none;
+    color: #adb5bd;
+    background-color: #000;
+    cursor: pointer;
+    width: 80px;
+    font-size: 3.15rem;
+}
+
+#close-menu:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#home {
+    text-align: center;
+    min-height: 350px;
+    margin-top: 9rem;
+    color: #000000;
+    font-family: Montserrat;
+}
+
+#home p {
+    font-size: 15px;
+}
+
+#home button {
+    border: none;
+}
+
+.d-no {
+    display: none;
+}
+
+.progress-bar-custom {
+    background-color: #616161;
+    /* dark grey like w3-dark-grey */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    /* mimic w3-padding-small */
+}
+
+.progress {
+    background-color: #f1f1f1;
+    /* w3-light-grey */
+    height: 28px;
+    /* Adjust to match W3.CSS height */
+    margin-bottom: 16px;
+}
+
+.skill-label {
+    font-weight: 600;
+    letter-spacing: 2px;
+    /* mimic w3-wide */
+}
+
+.mobile-image {
+    display: none;
+}
+
+.pricing-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* w3-hover-shadow mimic */
+    border: none;
+
+    transition: transform 0.2s ease-in-out;
+}
+
+.bor {
+    border-radius: 0px;
+}
+
+.pricing-header {
+    background-color: #444444;
+    /* w3-dark-grey */
+    color: white;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.pricing-body li {
+    padding: 1rem;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.pricing-price h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.pricing-price span {
+    opacity: 0.6;
+    font-size: 1rem;
+}
+
+.pricing-footer {
+    background-color: #f1f1f1;
+    /* w3-light-grey */
+    padding: 1.5rem;
+}
+
+.pricing-footer button {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.color-set-light {
+    background-color: whitesmoke;
+    color: #ddd;
+}
+
+.color-set-light:hover {
+    background-color: #616161;
+}
+
+.color-set-dark {
+    background-color: #60676d;
+}
+
+.form-control {
+    line-height: 3.5;
+}
+
+@media (max-width: 767px) {
+    .container-main {
+        flex-direction: column;
+    }
+
+    .left-side {
+        display: none;
+    }
+
+    .right-side {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .mobile-image {
+        display: block;
+        margin-top: 2rem;
+    }
+
+    #menu {
+        width: 50%;
+        right: -100%;
+        z-index: 1000;
+        display: block;
+        text-align: center;
+        padding-top: 3rem;
+    }
+
+    #menu ul {
+        padding-left: 0;
+    }
+
+    #menu ul li {
+        margin: 1rem 0;
+    }
+
+    #menu ul li a {
+        font-size: 1.5rem;
+    }
+
+    #menu.show {
+        right: 0;
+    }
+
+    .nav-toggle {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
+
+    #close-menu {
+        font-size: 2.5rem;
+        right: 10px;
+        top: 10px;
+        z-index: 1100;
+    }
+
+    .d-no {
+        display: flex;
+        margin-top: 10%;
+    }
+
+    #home button {
+        display: none;
+        border: none;
+    }
+
+    #portfolio {
+        margin-top: 34px;
+    }
+
+    d-vi {
+        display: flex;
+    }
+}
