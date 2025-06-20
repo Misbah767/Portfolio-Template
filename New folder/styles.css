@@ -10,6 +10,7 @@ html {
     font-family: "Montserrat", sans-serif;
 }
 
+/* Main container adjust and right and left page styles */
 .container-main {
     display: flex;
     min-height: 100vh;
@@ -37,6 +38,7 @@ html {
     padding: 1rem;
 }
 
+/* Navbar styles */
 .nav-toggle {
     position: fixed;
     right: 0px;
@@ -118,6 +120,7 @@ html {
     font-family: Montserrat;
 }
 
+/* home page styles start */
 #home p {
     font-size: 15px;
 }
@@ -126,31 +129,29 @@ html {
     border: none;
 }
 
+/* display nome for resume button show on mobile */
 .d-no {
     display: none;
 }
 
+/* skills section styles */
 .progress-bar-custom {
     background-color: #616161;
-    /* dark grey like w3-dark-grey */
     color: white;
     font-weight: bold;
     text-align: center;
-    /* mimic w3-padding-small */
 }
 
 .progress {
     background-color: #f1f1f1;
-    /* w3-light-grey */
     height: 28px;
-    /* Adjust to match W3.CSS height */
+
     margin-bottom: 16px;
 }
 
 .skill-label {
     font-weight: 600;
     letter-spacing: 2px;
-    /* mimic w3-wide */
 }
 
 .mobile-image {
@@ -159,9 +160,7 @@ html {
 
 .pricing-card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    /* w3-hover-shadow mimic */
     border: none;
-
     transition: transform 0.2s ease-in-out;
 }
 
@@ -169,9 +168,9 @@ html {
     border-radius: 0px;
 }
 
+/* pricing page  and footer*/
 .pricing-header {
     background-color: #444444;
-    /* w3-dark-grey */
     color: white;
     padding: 2rem;
     font-size: 1.5rem;
@@ -195,7 +194,6 @@ html {
 
 .pricing-footer {
     background-color: #f1f1f1;
-    /* w3-light-grey */
     padding: 1.5rem;
 }
 
@@ -226,6 +224,7 @@ img {
     line-height: 3.5;
 }
 
+/* Responsive styles */
 @media (max-width: 767px) {
     .container-main {
         flex-direction: column;
